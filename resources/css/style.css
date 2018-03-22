@@ -47,13 +47,19 @@ div {
 img {
   height: auto;
   max-width: 100%;
-  overflow: hidden;
+  display: block;
 }
 
 .img-container {
-  display: flex;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+video {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .button {
@@ -120,6 +126,7 @@ nav {
 
 .support-banner {
   width: 100%
+  /* needs max height */
 }
 
 .support-banner .col-main .img-caption {
@@ -129,6 +136,18 @@ nav {
 
 .info {
   width: 100%;
+}
+
+.support-banner .container {
+  align-items: stretch;
+}
+
+.support-banner .container ul li {
+  margin-bottom: 1.5rem;
+}
+
+.support-banner .container .img-container {
+  margin-bottom: 2rem; 
 }
 
 .info-img {
@@ -166,7 +185,7 @@ nav {
   padding: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;;
+  align-items: stretch;
 }
 
 .courses h2 {
@@ -210,6 +229,17 @@ nav {
 
 /* Thesis Section */
 
+.thesis .container {
+  align-items: flex-start;
+}
+
+.thesis .container .col-main ul {
+  margin: 2rem;
+}
+
+.thesis .container .col-main ul li h3{
+  margin-bottom: 0.5rem;
+}
 
 /* Footer */
 
