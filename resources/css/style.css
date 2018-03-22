@@ -10,12 +10,18 @@ body {
 
 .col-main {
   margin: 2rem 1.54rem;
-  width: 60%
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .col-sub {
   margin: 2rem;
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .flex-row {
@@ -38,19 +44,118 @@ div {
   margin: 2rem 0 2rem 1.5rem;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.img-container {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  background-color: #34495e;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.quote {
+
+}
+
+.citation {
+  font-weight: bold;
+}
+
+h1, h2, h3, {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 /* Header */
 
 header {
   height: 4rem;
   margin-right: 1.5rem;
   justify-content: space-between;
+  width: 100%;
 }
 
 nav {
-  justify-content: flex-end;
+
 }
 
-/* Supporting Sections */
+/* Main Banner Section */
+
+.main-banner {
+  background-color: #95a5a6;
+  width: 100%;
+}
+.main-banner .container .col-sub {
+  margin-right: 4rem;
+  justify-content: flex-start;
+}
+
+
+/* Supporting Banner Sections */
+
+.support-banner {
+  width: 100%
+}
+
+.support-banner .col-main .img-caption {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.info {
+  width: 100%;
+}
+
+.info-img {
+  max-width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.info-details {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.info-title {
+  margin-bottom: 8px;
+}
+
+.info-description {
+  margin-bottom: 8px;
+}
+
+.info-link {
+
+}
+
+/* Courses Section */
+
+
+/* Thesis Section */
+
 
 /* Footer */
 
