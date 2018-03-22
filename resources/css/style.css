@@ -147,7 +147,7 @@ nav {
 }
 
 .support-banner .container .img-container {
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
 }
 
 .info-img {
@@ -244,5 +244,9 @@ nav {
 /* Footer */
 
 footer {
+  font-size: .75rem; 
+}
 
+footer .container {
+  justify-content: space-between;
 }
