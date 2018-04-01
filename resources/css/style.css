@@ -37,12 +37,11 @@ body:nth-child(2n+1) {
 }
 
 div {
-  border: solid 1px;
   display: block;
 }
 
 .container {
-  margin: 1rem 0 1rem 1.5rem;
+  margin: 1rem 2rem 1rem 1.5rem;
 }
 
 img {
@@ -84,11 +83,11 @@ h1, h2, h3, {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -98,7 +97,7 @@ h3 {
 a {
   text-decoration: none;
   color: black;
-  transition: all 750ms linear 250ms;
+  transition: all 500ms linear 250ms;
 }
 
 a:hover {
@@ -186,7 +185,7 @@ nav ul li {
   text-align: center;
   font-size: 1.5rem;
   height: 2.5rem;
-  width: 85%;
+  width: 90%;
   justify-content: center;
 }
 
@@ -219,6 +218,18 @@ nav ul li {
   margin-bottom: 1.5rem;
 }
 
+.support-banner .container ul li h2 {
+  font-weight: bold;
+}
+
+.img-caption {
+  color: #515050;
+}
+
+.quote {
+  font-size: 1.5rem;
+}
+
 .support-banner .container .img-container {
   margin-bottom: 2rem;
 }
@@ -233,24 +244,50 @@ nav ul li {
   align-items: flex-start;
   justify-content: center;
   width: 65%;
+  color: #515050;
+}
+
+.info-details div {
+  margin-bottom: .75rem;
 }
 
 .info-title {
   margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.info-title h3 {
+  font-size: 2.5rem;
 }
 
 .info-description {
   margin-bottom: 8px;
+  font-size: 1.5rem;
 }
 
 .info-link {
-
+  font-size: 1.5rem;
 }
+
+.info-link a {
+  color: #0981dd;
+}
+
+.info-link a:hover {
+  color: #051827;
+  font-size: 2rem;
+}
+
+.col-sub .guest-lecture {
+  background-color: #DBDBDB;
+}
+
 
 /* Courses Section */
 
 .courses {
   width: 100%;
+  background-color: #DBDBDB;
 }
 
 .courses .container {
@@ -270,6 +307,7 @@ nav ul li {
 .course {
   margin: 1rem;
   width: 30%;
+  background-color: #fff;
 }
 
 .course-img {
@@ -293,7 +331,13 @@ nav ul li {
 
 .course-info ul li {
   margin: 4px 0;
-  color: gray;
+  font-size: 1.25rem;
+  color: #515050;
+}
+
+.course-info ul li:first-child {
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 .course-info ul li:nth-child(2n + 2) {
