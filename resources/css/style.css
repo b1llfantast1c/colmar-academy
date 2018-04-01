@@ -351,11 +351,22 @@ nav ul li {
 }
 
 .thesis .container .col-main ul {
-  margin: 2rem;
+  color: #515050;
+  padding-right: 1.5rem;
 }
 
-.thesis .container .col-main ul li h3{
-  margin-bottom: 0.5rem;
+.thesis .container .col-main ul li {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.thesis .container .col-main ul li h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.thesis .col-sub {
+  justify-content: flex-start;
 }
 
 /* Footer */
