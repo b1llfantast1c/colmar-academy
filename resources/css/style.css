@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 body:nth-child(2n+1) {
@@ -83,7 +84,7 @@ h1, h2, h3, {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -141,6 +142,10 @@ header .container {
   color: gray;
 }
 
+nav ul {
+  margin-right: 1.5rem;
+}
+
 nav ul li {
   font-size: 1.5rem;
   padding-right: 1rem;
@@ -150,10 +155,43 @@ nav ul li {
 
 .main-banner {
   width: 100%;
+  background-color: #DBDBDB;
 }
+
 .main-banner .container .col-sub {
   margin-right: 4rem;
   justify-content: flex-start;
+  color: #515050;
+}
+
+.main-banner .container .col-sub ul {
+  width: 85%;
+}
+
+.main-banner .container .col-sub ul li{
+  margin-bottom: 2rem;
+}
+
+.main-banner .container .col-sub ul li {
+  font-weight: bold;
+}
+
+.main-banner .container .col-sub ul li h1 {
+  font-size: 3.5rem;
+}
+
+.main-banner .container .col-sub ul .button {
+  background-color: #515050;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  width: 85%;
+  justify-content: center;
+}
+
+.main-banner .container .col-sub ul .button a {
+  color: #FFFFFF;
 }
 
 
