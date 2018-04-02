@@ -25,6 +25,13 @@ body:nth-child(2n+1) {
   align-items: center;
 }
 
+@media only screen and (max-width: 480px) {
+  .col-main, .col-sub {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .flex-row {
   display: flex;
   align-items: center;
@@ -78,7 +85,7 @@ video {
 
 h1, h2, h3, {
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem 0;
   display: block;
 }
 
@@ -92,6 +99,20 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.0rem;
+  }
+
+  h3 {
+    font-size: 1.0rem;
+  }
 }
 
 a {
@@ -150,6 +171,25 @@ nav ul li {
   padding-right: 1rem;
 }
 
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .desktop, .company-name {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+  }
+
+  .mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
 /* Main Banner Section */
 
 .main-banner {
@@ -169,15 +209,11 @@ nav ul li {
 
 .main-banner .container .col-sub ul li{
   margin-bottom: 2rem;
-}
-
-.main-banner .container .col-sub ul li {
+  margin: 1rem;
   font-weight: bold;
 }
 
-.main-banner .container .col-sub ul li h1 {
-  font-size: 3.5rem;
-}
+
 
 .main-banner .container .col-sub ul .button {
   background-color: #515050;
@@ -191,6 +227,20 @@ nav ul li {
 
 .main-banner .container .col-sub ul .button a {
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-banner .container {
+    flex-direction: column;
+  }
+
+  .main-banner .container .col-sub ul li h2 {
+    font-weight: normal;
+  }
+
+  .main-banner .container .col-sub ul .button {
+    width: 100%;
+  }
 }
 
 
