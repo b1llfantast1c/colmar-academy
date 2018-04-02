@@ -84,17 +84,17 @@ video {
 }
 
 h1, h2, h3, {
-  font-weight: bold;
   margin-bottom: 1rem 0;
   display: block;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.0rem;
 }
 
 h3 {
@@ -225,6 +225,9 @@ nav ul li {
   justify-content: center;
 }
 
+.main-banner .container .col-sub ul li h2 {
+  font-weight: normal;
+}
 .main-banner .container .col-sub ul .button a {
   color: #FFFFFF;
 }
@@ -234,12 +237,21 @@ nav ul li {
     flex-direction: column;
   }
 
-  .main-banner .container .col-sub ul li h2 {
-    font-weight: normal;
+  .main-banner .container .col-sub ul {
+    width: 100%;
+  }
+
+  .main-banner .container .col-sub ul li {
+    margin: 1.75rem 0;
+  }
+
+  .main-banner .container .col-sub {
+    margin: 0;
   }
 
   .main-banner .container .col-sub ul .button {
     width: 100%;
+    margin: 1.5rem 0rem;
   }
 }
 
@@ -332,6 +344,21 @@ nav ul li {
   background-color: #DBDBDB;
 }
 
+@media only screen and (max-width: 480px) {
+  .support-banner .container .col-main {
+    display: none;
+  }
+
+  .info-title h3 {
+    font-size: 1.5rem;
+  }
+
+  .info-description, .info-link {
+    font-size: 1rem;
+  }
+
+
+}
 
 /* Courses Section */
 
