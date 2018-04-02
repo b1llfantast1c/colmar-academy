@@ -357,7 +357,9 @@ nav ul li {
     font-size: 1rem;
   }
 
-
+  .col-sub .guest-lecture {
+    background-color: #fff;
+  }
 }
 
 /* Courses Section */
@@ -421,7 +423,42 @@ nav ul li {
   text-transform: uppercase;
 }
 
-/* Thesis Section */
+@media only screen and (max-width: 480px) {
+  .courses {
+    background-color: #fff;
+  }
+
+  .course .course-img,
+  .course-info ul li:nth-child(1n + 2) {
+    display: none;
+  }
+
+  .course {
+    width: 100%;
+    background-color: #DBDBDB;
+    margin: .25rem 0;
+  }
+
+  .course-info {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 1rem 0 1rem 1.5rem;
+  }
+
+  .course-info ul li:first-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #515050;
+  }
+}
+
+/*  Thesis Section  */
+
+.thesis h1 {
+  text-align: center;
+  color: #515050;
+  margin-top: 2rem;
+}
 
 .thesis .container {
   align-items: flex-start;
@@ -446,6 +483,12 @@ nav ul li {
   justify-content: flex-start;
 }
 
+@media only screen and (max-width: 480px) {
+  .thesis .col-sub, .col-main ul {
+    display: none;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -454,4 +497,10 @@ footer {
 
 footer .container {
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  footer nav {
+    display: none;
+  }
 }
