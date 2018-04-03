@@ -25,7 +25,7 @@ body:nth-child(2n+1) {
   align-items: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   .col-main, .col-sub {
     width: 100%;
     margin: 0;
@@ -49,6 +49,7 @@ div {
 
 .container {
   margin: 1rem 2rem 1rem 1.5rem;
+  max-width: 100rem;
 }
 
 img {
@@ -101,7 +102,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1200px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -174,6 +175,20 @@ nav ul li {
 .mobile {
   display: none;
 }
+@media only screen and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header nav {
+    width: 50%;
+  }
+}
 
 @media only screen and (max-width: 480px) {
   .desktop, .company-name {
@@ -184,9 +199,7 @@ nav ul li {
   }
 
   .mobile {
-    display: flex;
     width: 100%;
-    justify-content: space-around;
   }
 }
 
@@ -213,8 +226,6 @@ nav ul li {
   font-weight: bold;
 }
 
-
-
 .main-banner .container .col-sub ul .button {
   background-color: #515050;
   margin-top: 1.5rem;
@@ -228,11 +239,22 @@ nav ul li {
 .main-banner .container .col-sub ul li h2 {
   font-weight: normal;
 }
+
 .main-banner .container .col-sub ul .button a {
   color: #FFFFFF;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1028px) {
+  .main-banner .col-sub ul li h1 {
+    font-size: 2.0rem;
+  }
+
+  .main-banner .col-sub ul li h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .main-banner .container {
     flex-direction: column;
   }
@@ -260,7 +282,6 @@ nav ul li {
 
 .support-banner {
   width: 100%
-  /* needs max height */
 }
 
 .support-banner .col-main .img-caption {
@@ -322,6 +343,16 @@ nav ul li {
   font-size: 2.5rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .info-title h3 {
+    font-size: 1.75rem;
+  }
+
+  .info-details p {
+    font-size: 1.25rem;
+  }
+}
+
 .info-description {
   margin-bottom: 8px;
   font-size: 1.5rem;
@@ -342,6 +373,12 @@ nav ul li {
 
 .col-sub .guest-lecture {
   background-color: #DBDBDB;
+}
+
+@media only screen and (max-width: 800px) {
+  .support-banner .container {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -387,6 +424,13 @@ nav ul li {
   margin: 1rem;
   width: 30%;
   background-color: #fff;
+}
+
+@media only screen and (max-width: 1088px) {
+  .course {
+    margin: 0.5rem 0.5rem;
+    width: 45%;
+  }
 }
 
 .course-img {
@@ -483,6 +527,12 @@ nav ul li {
   justify-content: flex-start;
 }
 
+@media only screen and (max-width: 1200px) {
+  .thesis .container {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .thesis .col-sub, .col-main ul {
     display: none;
@@ -497,6 +547,12 @@ footer {
 
 footer .container {
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1200px) {
+  footer nav ul li {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
